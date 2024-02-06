@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  html,
+  body {
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Open Sans","PingFang SC","Microsoft YaHei","Helvetica Neue","Hiragino Sans GB","WenQuanYi Micro Hei",Arial,sans-serif;
+  }
+  
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 100% 0;
+    }
+  }
+  
+  .bg {
+    background: url(https://sp-webfront.skypixel.com/skypixel/v2/public/website/assets/1535027674204-f6eca6369ec03e70262b58b0e25cda7b.jpg);
+    background-size: cover;
+    position: fixed;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    filter: blur(15px);
+    z-index: -1;
+  }
+  
+  .slogan {
+    color: white;
+    margin-top: 24px;
+    font-size: 36px;
+    font-weight: 400;
+  }
+  
+  .mask {
+    width: 340px;
+    height: 196px;
+    animation: move 100s infinite;
+    background-image: url(https://sp-webfront.skypixel.com/skypixel/v2/public/website/assets/1535027674204-f6eca6369ec03e70262b58b0e25cda7b.jpg);
+    background-size: cover;
+    mask: url(http://www2.djicdn.com/assets/images/v3/logo-black2-145dcb13c56f36a65d084180a42136fa.svg);
+    mask-size: cover;
+  }
+  
+  .menu-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .menu {
+    list-style: none;
+  }
+  
+  .menu li {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+/* Adjust the styles for the images */
+#shop-page img {
+  max-width: 20%;
+  height: auto;
+  margin-bottom: 10px; /* Optional: Add some margin between images */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top of the container */
+  align-items: center;
+  height: 48vh; /* Adjust the height */
+  padding: 20px; /* padding for better spacing */
+}
+
+/* Add a new class for the image container to control its position */
+.image-container {
+  display: flex;
+  flex-wrap: wrap; /* Enable wrapping of images to the next line */
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Align text to the left within the container */
+  height: 70vh; /* Adjust the height */
+  padding: 0 20px; /* padding for better spacing */
+}
+
+/* Add a new class for the second floor container */
+.second-floor-container {
+  display: flex;
+  flex-wrap: wrap; /* Enable wrapping of images to the next line */
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Align text to the left within the container */
+  height: 50vh; /* Adjust the height */
+  padding: 0 20px; 
+}
+
+
+#shop-page h2 {
+  margin: 0; 
+}
+
+body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .image-container,
+  .second-floor-container {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+}
